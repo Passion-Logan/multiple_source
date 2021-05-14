@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
+    <modelVersion xmlns="">4.0.0</modelVersion>
+    <parent xmlns="">
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.4.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.cody</groupId>
-    <artifactId>source</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>source</name>
-    <description>多数据源</description>
-    <properties>
+    <groupId xmlns="">com.cody</groupId>
+    <artifactId xmlns="">source</artifactId>
+    <version xmlns="">0.0.1-SNAPSHOT</version>
+    <name xmlns="">source</name>
+    <description xmlns="">多数据源</description>
+    <properties xmlns="">
         <java.version>1.8</java.version>
     </properties>
-    <dependencies>
+    <dependencies xmlns="">
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.2</version>
         </dependency>
 
         <dependency>
@@ -31,14 +42,27 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <scope>compile</scope>
+            <groupId>com.baomidou</groupId>
+            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+            <version>3.3.2</version>
+        </dependency>
     </dependencies>
 
-    <build>
+    <build xmlns="">
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
