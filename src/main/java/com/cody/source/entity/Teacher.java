@@ -1,5 +1,8 @@
 package com.cody.source.entity;
 
+import lombok.Builder;
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
@@ -8,6 +11,8 @@ import java.io.Serializable;
  * @author wql
  * @since 2021-05-14 23:17:11
  */
+@Data
+@Builder
 public class Teacher implements Serializable {
     private static final long serialVersionUID = -33858677799290426L;
 
@@ -42,4 +47,12 @@ public class Teacher implements Serializable {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
