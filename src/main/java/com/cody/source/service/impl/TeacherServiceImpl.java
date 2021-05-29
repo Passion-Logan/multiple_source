@@ -1,8 +1,8 @@
 package com.cody.source.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.cody.source.entity.Teacher;
 import com.cody.source.dao.TeacherDao;
+import com.cody.source.entity.Teacher;
 import com.cody.source.service.TeacherService;
 import org.springframework.stereotype.Service;
 

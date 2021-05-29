@@ -12,6 +12,6 @@ public class DataSourceConstants {
 
     public static final String DS_KEY_MASTER = "master";
 
-    public static final String DS_KEY_SLAVE  = "slave_1";
+    public static final String DS_KEY_SLAVE  = "slave";
 
 }

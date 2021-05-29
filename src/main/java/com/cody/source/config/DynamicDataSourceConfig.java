@@ -24,7 +24,7 @@ import java.util.Map;
  */
 @EnableAutoConfiguration(exclude = DataSourceAutoConfiguration.class)
 @Configuration
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:jdbc/jdbc.properties")
 public class DynamicDataSourceConfig {
 
     @Bean(DataSourceConstants.DS_KEY_MASTER)
